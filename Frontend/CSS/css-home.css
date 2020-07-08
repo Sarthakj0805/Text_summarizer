@@ -1,0 +1,87 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../Assets/cassandra/cassandrapersonaluseregular-3bjg-webfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url('../Assets/cassandra/cassandrapersonaluseregular-3bjg-webfont.woff2') format('woff2'),
+      url('../Assets/cassandra/CassandraPersonalUseRegular-3BjG.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  }  
+
+
+h1 {
+    color: silver;
+    padding-left: 30px;
+    padding-top: 30px;
+    font-family: MyWebFont;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+body {
+    background: url(../Assets/close-up-of-wooden-plank-326311.jpg) no-repeat center;
+    color: silver;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    min-height: 720px; 
+    display: table;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 60em;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+label,
+textarea {
+    letter-spacing: 1px;
+}
+textarea {
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    outline: none;
+    background-color: lightgray;
+    opacity: 0.7;
+    
+}
+
+label {
+    display: table;
+    color: whitesmoke;
+}
+
+::placeholder {
+    color:black;
+    opacity: 0.7;
+}
+.input {
+    width: 50%;
+    float: left;
+    padding-left: 6.8em;
+    padding-top: 2.8em;
+}
+
+.output {
+    width: 50%;
+    float: right;
+    padding-left: 16em;
+    padding-top: 2.8em;
+}
+.button {
+    background-color: #555555;
+    color: whitesmoke;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+}
