@@ -16,26 +16,25 @@
 </head>
 
 <body>
-    <div class = navbar>
+    <header>
         <h1>Text Summarizer</h1>
+    </header>
+    <div class="flex-container">
+        <div class = input>
+            <label for="input text">Input:</label>
+            <br>
+            <textarea id="input" name="input text" 
+            placeholder="enter your text here" rows="11" cols="42" ></textarea>
+            <br>
+            <!-- <textarea id="summary   limit" name="summary limit" rows="2" cols="24">enter the summary length:</textarea> -->
+            <button class="button">Get Summary</button>
+        </div>
+        <div class="output">
+            <label for="output text">Summary:</label>
+            <br>
+            <textarea id="output" name="output text" rows="11" cols="42" readonly></textarea>
+        </div>
     </div>
-    <div class = input>
-        <label for="input text">Input:</label>
-        <br>
-        <textarea id="input" name="input text" 
-          placeholder="enter your text here" rows="12" cols="40" ></textarea>
-        <br>
-        <!-- <textarea id="summary   limit" name="summary limit" rows="2" cols="24">enter the summary length:</textarea> -->
-        <button class="button">Get Summary</button>
-
-    </div>
-    <div class="output">
-        <label for="output text">Summary:</label>
-        <br>
-        <textarea id="output" name="output text" 
-         rows="12" cols="40" readonly></textarea>
-    </div>
-
-    <!-- <div class = "github">
+    <!-- <footer class = "github">
         <i class="fa fa-github" style="font-size:36px"></i>
-    </div> -->
+    </footer> -->

@@ -9,11 +9,14 @@ html {
       url('../Assets/cassandra/CassandraPersonalUseRegular-3BjG.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
   }  
 
-
+header {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: auto;
+    margin-right: auto;
+}
 h1 {
-    color: silver;
-    padding-left: 30px;
-    padding-top: 30px;
+    color:rgba(243, 161, 8, 0.87);
     font-family: MyWebFont;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -29,8 +32,8 @@ body {
     display: table;
     position: relative;
     text-align: center;
-    margin: 0 auto;
-    max-width: 60em;
+    /* margin: 0 auto;
+    max-width: 60em; */
     font-size: 14px;
     font-family: Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -44,11 +47,11 @@ textarea {
 textarea {
     line-height: 1.5;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 2px soli    d cyan;
     box-shadow: 1px 1px 1px black;
     outline: none;
     background-color: lightgray;
-    opacity: 0.7;
+    opacity: 0.6;
     
 }
 
@@ -61,19 +64,18 @@ label {
     color:black;
     opacity: 0.7;
 }
-.input {
-    width: 50%;
-    float: left;
-    padding-left: 6.8em;
-    padding-top: 2.8em;
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.output {
-    width: 50%;
-    float: right;
-    padding-left: 16em;
-    padding-top: 2.8em;
+.flex-container > div {
+    margin: 0 auto;
+    margin-top: 60px;
 }
+
 .button {
     background-color: #555555;
     color: whitesmoke;
