@@ -11,12 +11,12 @@ html {
 
 header {
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-bottom: auto;
     margin-right: auto;
 }
 h1 {
-    color:rgba(243, 161, 8, 0.87);
+    color:whitesmoke;
     font-family: MyWebFont;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -34,7 +34,7 @@ body {
     text-align: center;
     /* margin: 0 auto;
     max-width: 60em; */
-    font-size: 14px;
+    font-size: 22px;
     font-family: Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -50,19 +50,20 @@ textarea {
     border: 2px soli    d cyan;
     box-shadow: 1px 1px 1px black;
     outline: none;
-    background-color: lightgray;
-    opacity: 0.6;
-    
+    background-color: rgba(211, 211, 211, 0.5);
+    font-size: 22px;
+    color: black;
 }
 
 label {
     display: table;
     color: whitesmoke;
+    font-size: 22px;
 }
 
 ::placeholder {
     color:black;
-    opacity: 0.7;
+    opacity: 1;
 }
 
 .flex-container {
@@ -80,10 +81,11 @@ label {
     background-color: #555555;
     color: whitesmoke;
     padding: 12px 30px;
+    margin-top: 14px;
     text-align: center;
     text-decoration: none;
     display: block;
-    font-size: 16px;
+    font-size: 22px;
     cursor: pointer;
     float: right;
 }
