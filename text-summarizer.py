@@ -82,7 +82,9 @@ def generate_summary(file_name, top_n=5):
       summarize_text.append(" ".join(ranked_sentence[i][1]))
 
     # Output summary
-    print("Summary: \n", ". ".join(summarize_text))
+    f = open("Model\\sample_summary.txt", "w")
+    f.write( ". ".join(summarize_text))
+    f.close()
 
 # run test harness
-generate_summary( "msft.txt", 2)
+generate_summary( "Model\\fb.txt", 2)
