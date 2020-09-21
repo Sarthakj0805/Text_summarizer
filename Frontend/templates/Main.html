@@ -15,6 +15,7 @@
     <!-- add a favicon icon later -->
     <script>
         var result = {{ result }};
+        var input = {{ input }};
     </script>
 </head>
 <body>
@@ -27,7 +28,7 @@
                 <label for="input text">Input:</label>
                 <br>
                 <textarea type="text" id="input" name="input_text" 
-                placeholder="enter your text here" rows="12" cols="64"> </textarea>
+                placeholder="enter your text here" rows="12" cols="64"> {{input}} </textarea>
                 <br>
                 <input type="submit" class="button" value="Get Summary"> 
             </form>

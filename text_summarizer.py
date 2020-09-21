@@ -6,10 +6,10 @@ from nltk.cluster.util import cosine_distance
 import numpy as np
 import networkx as nx
  
-def read_article(file_name):
-    file = open(file_name, "r")
-    filedata = file.readlines()
-    article = filedata[0].split(". ")
+def read_article(filedata):
+    # file = open(file_name, "r")
+    # filedata = file.readlines()
+    article = filedata.split(". ")
     sentences = []
 
     for sentence in article:
@@ -58,13 +58,13 @@ def build_similarity_matrix(sentences, stop_words):
     return similarity_matrix
 
 
-def generate_summary(file_name, top_n=5):
+def generate_summary(filedata, top_n=5):
     nltk.download("stopwords")
     stop_words = stopwords.words('english')
     summarize_text = []
 
     # Read text and split it
-    sentences =  read_article(file_name)
+    sentences =  read_article(filedata)
 
     # Generate Similary Martix across sentences
     sentence_similarity_martix = build_similarity_matrix(sentences, stop_words)
@@ -82,9 +82,11 @@ def generate_summary(file_name, top_n=5):
       summarize_text.append(" ".join(ranked_sentence[i][1]))
 
     # Output summary
-    f = open("Model\\sample_summary.txt", "w")
-    f.write( ". ".join(summarize_text))
-    f.close()
+    # f = open("Model\\sample_summary.txt", "w")
+    # f.write( ". ".join(summarize_text))
+    # f.close()
+    summary_text =  ". ".join(summarize_text)
+    return summary_text
 
 # run test harness
-generate_summary( "Model\\fb.txt", 2)
+# generate_summary( "Model\\fb.txt", 2)
